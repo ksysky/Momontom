@@ -1,0 +1,126 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 초기화 */
+ul, li {
+	list-style: none;
+}
+
+/* 배경 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'GongGothicLight';
+	color: white;
+	background-color: black;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.bgImage {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* 시계 */
+.clockText {
+	font-size: 7rem;
+	text-shadow: 6px 2px 6px #2d3436;
+}
+
+/* 그리팅 */
+.greeting {
+	font-size: 30px;
+	text-shadow: 4px 2px 3px #2d3436;
+}
+
+.greetingForm, .greeting {
+	display: none;
+}
+
+.greetingForm input {
+	font-family: 'GongGothicLight';
+	height: auto;
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+}
+
+.showing {
+	display: block;
+}
+
+/* 투두 */
+.toDoForm {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.toDoShow {
+	opacity: 1;
+}
+
+.toDoForm input {
+	font-family: 'GongGothicLight';
+	height: auto;
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+}
+
+/* 투두리스트 */
+.toDoList {
+	width: 500px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.toDoList li {
+	width: 400px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 7px;
+}
+
+.toDoList li button {
+	background: none;
+	border: none;
+}
+
+.toDoList li span {
+	padding-left: 10px;
+}
+
+/* 날씨 */
+.weather {
+	position: absolute;
+	margin: 20px;
+	right: 0;
+	font-size: 18px;
+	text-shadow: 3px 2px 3px #2d3436;
+}
